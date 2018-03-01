@@ -1,0 +1,21 @@
+theme: jekyll-theme-slate
+title: The Haskell Road
+description: Implement as Logic, Math and Programming
+collections:
+    - chapters
+defaults:
+    -
+      scope:
+        path: ""
+        type: "pages"
+      values:
+        layout: "default"
+
+
+    -
+      scope:
+        path: "chapters"
+        type: chapters
+
+      values:
+        layout: "pages"
