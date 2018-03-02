@@ -1,6 +1,6 @@
 ---
-title:Chapter 1
-tags:'Functional Programming'
+title: Chapter 1
+tags: 'Functional Programming'
 ---
 # 1.Getting Started
 
@@ -1176,15 +1176,15 @@ __Example:__
 
 You may see that except for 2 ,all other primes are odd.
 
-Since all primes $P$ that can only divisible by itself except for 1.
+Since all primes \\(P\\) that can only divisible by itself except for 1.
 Then,
-Let $n > 1$ be a natural number $\mathbb{N}$.
+Let \\(n > 1\\) be a natural number \\(\mathbb{N}\\).
 And we use LD(n) denote the least natural number divides n except for 1.
 
 We will learn how to prove propositions like these.
 
 ### _**Proposition**_
-$for$ \\[ \{n \in \mathbb{N} : n>1\} \\]
+\\(for\\) \\[ \{n \in \mathbb{N} : n>1\} \\]
 \\[ \{p \in P \} \\]
 \\( 1. \quad  LD(n) \in P  \\)
 
@@ -1192,7 +1192,7 @@ $for$ \\[ \{n \in \mathbb{N} : n>1\} \\]
 
 ### **_Proof by Contradiction:_**
 
-$Contradiction 1.$
+\\(Contradiction 1.\\)
 \\[if \quad c = LD(n) \notin P\\]
 \\[then \quad c = a \cdot b \ ;  1 < a < c \\]
 \\[\implies  a\ divides\ n \\]
@@ -1200,7 +1200,7 @@ $Contradiction 1.$
 __This is contradict to definition of $LD(n)$, that c is the smallest natural number that divides n(except 1)__
 
 \\[\therefore LD(n) \in P \\]
-$Contradiction 2.$
+\\(Contradiction 2.\\)
 \\[if \quad m \in \{n \notin P\} \\]
 \\[then \quad p = LD(m) \ ;  m = p \cdot a \\] 
 \\[thus \quad a\ divides\ m \\]
@@ -1639,7 +1639,7 @@ foo t is by definition equal to body_4.
 
 It is convenient to define
 LD in terms of a second function LDF, for the least divisor starting from a given
-threshold k, with $k \leq n$.
+threshold k, with \\(k \leq n\\).
 
 
 ```haskell
@@ -2645,7 +2645,7 @@ font-weight: bold;
 
 ## 1.4 Identifiers in Haskell
 
-In previous,$divides$ takes $rem$ as a part of the equation.
+In previous,\\(divides\\) takes \\(rem\\) as a part of the equation.
 
 
 ```haskell
@@ -3043,12 +3043,12 @@ min 2 3 # give 2
 **Explain on the Pattern Matching**:
 
 1. [] matches the empty list and return error
-2. [x] matches any singleton list and return x directly
+2. \[x\] matches any singleton list and return x directly
 3. [x:xs] matches any non-empty list and recursive searching that
 
 and as mentioned above it screen condition from top to the bottom.
 
-*quick check* what if the difference without condition $1$ or $2$
+*quick check* what if the difference without condition \\(1\\) or \\(2\\)
 
 It is common Haskell practice to refer to non-empty lists as x:xs, y:ys, and so
 on, as a useful reminder of the facts that x is an element of a list of x’s and that xs
@@ -3238,7 +3238,7 @@ font-weight: bold;
 In Haskell,
 <= for \\(\leq\\), >= for \\(\geq\\)
 
-Object $Int$ are fixed precision integers. The size is 32 bits.
+Object \\(Int\\) are fixed precision integers. The size is 32 bits.
 
 **Conversion from Prefix to Infix in Haskell:**
 putting its name in back quotes,like:
@@ -5576,7 +5576,7 @@ We say that [a] is a **type scheme** rather than a type.
 Hence,we can use for computing the length of list of any type.
 
 >Note that type [Char] is abbreviate as String
->['H,'a,'s','k,'e','l','l'] $ \iff $ "Haskell"
+>['H,'a,'s','k,'e','l','l'] \\( \iff \\) "Haskell"
 
 
 ```haskell
