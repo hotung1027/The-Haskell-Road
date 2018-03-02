@@ -1,7 +1,4 @@
----
-title: Chapter 1
-tags: 'Functional Programming'
----
+
 # 1.Getting Started
 
 
@@ -2095,7 +2092,7 @@ correct primality test.
 Haskell has a concise way to indicate that divides consumes an integer, then
 another integer, and produces a truth value (called `Bool` in Haskell).
 
-    `Integer` and `Bool` values are examples of types.
+`Integer` and `Bool` values are examples of types.
 
 
 ```haskell
@@ -2274,9 +2271,9 @@ font-weight: bold;
 
 `Integer -> Integer -> Bool` is short for `Integer -> (Integer -> Bool)`.
 
-If $d$ is an experssion of $Integer$, then $divides\ d$ is and experssion of $Integer \to Bool$, as it would be a function that take a $Integer$ and return a $Bool$ value that divisible.
+If \\(d\\) is an experssion of \\(Integer\\), then \\(divides\ d\\) is and experssion of \\(Integer \to Bool\\), as it would be a function that take a \\(Integer\\) and return a \\(Bool\\) value that divisible.
 
->$d$ *is an expression of type* $Integer$ $\iff$ $d :: Integer$
+>\\(d\\) *is an expression of type* \\(Integer \iff d :: Integer\\)
 
 it is good programming practice to give explicit type declarations even when this is not strictly necessary. 
 
@@ -2822,15 +2819,15 @@ font-weight: bold;
 </style>
 
 
-the type judgement(:t) gives a $type\ scheme$ rather than a type.
+the type judgement(:t) gives a \\(type\ scheme\\) rather than a type.
 
-It said: if a is a type of class $Integral$ then `rem` is type `a->a->a`
+It said: if a is a type of class \\(Integral\\) then `rem` is type `a->a->a`
 
-In Haskell, $Integral$ is the class consist the two type of $Int$ and $Integer$.
+In Haskell, \\(Integral\\) is the class consist the two type of \\(Int\\) and \\(Integer\\).
 
 Where
-$Int$ have fixed precision,
-$Integer$ have arbitrary precision
+\\(Int\\) have fixed precision,
+\\(Integral\\) have arbitrary precision
 
 In Haskell, there are two kinds of identifiers:
 
@@ -3236,7 +3233,7 @@ font-weight: bold;
 
 
 In Haskell,
-<= for $\leq$, >= for $\geq$
+<= for \\(\leq\\), >= for \\(\geq\\)
 
 Object $Int$ are fixed precision integers. The size is 32 bits.
 
@@ -5197,11 +5194,11 @@ font-weight: bold;
 
 **Example 1.12** Here is a function that calculates the average of a list of integers.
 
-- The average of $m$ and $n$ is given by $m+n \over
-2$ .
-- The average of a list of $k$ integers
-$n_1,\dots,n_k$ is given by $n_1+\dots+n_k\over
-k$.
+- The average of \\(m\\) and \\(n\\) is given by \\(m+n \over
+2\\) .
+- The average of a list of \\(k\\) integers
+\\(n_1,\dots,n_k\\) is given by \\(n_1+\dots+n_k\over
+k\\).
 
 In general, averages are fractions, so the result type of average should not be Int, but a floating point numbers. In Haskell data-type for floating point is `Float`.
 
@@ -5481,7 +5478,7 @@ color: red;
 .suggestion-name {
 font-weight: bold;
 }
-</style><span class='get-type'>length' :: forall a. [a] -> Int</span>
+</style><span class='get-type'>length' :: [Int] -> Int</span>
 
 
 
@@ -6468,7 +6465,7 @@ font-weight: bold;
 **Exercise 1.14** Write a function `blowup`
 
 - transfroming strings into strings as
-$a_1a_2a_3\dots$ to $a_1a_2a_2a_3a_3a_3\dots$
+\\(a_1a_2a_3\dots\\) to \\(a_1a_2a_2a_3a_3a_3\dots\\)
 
 
 ```haskell
@@ -7196,7 +7193,7 @@ font-weight: bold;
 </style>
 
 
-Here $\leftarrow$ denote an `IO` action, that gets its from $R.H.S$, and binds it to $L.H.S$
+Here \\(\leftarrow\\) denote an `IO` action, that gets its from \\(R.H.S\\), and binds it to \\(L.H.S\\)
 
 
 ```haskell
